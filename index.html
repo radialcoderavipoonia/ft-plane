@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FT Plane</title>
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- root css  -->
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <!-- aos css  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- slick slider css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <button onclick="backToTop()" id="topbtn" class="position-fixed backToTop border-0 z-3 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+            class="bi bi-arrow-up-square " viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+    </button>
+    <header class="hero_bg_image d-flex flex-column h_100vh h_110 vh_1440">
+        <div>
+            <nav class=" z-3 nav_bgw-100">
+
+                <div class="container py-3">
+                    <div class="d-flex align-items-center justify-content-between  py-2 ">
+                        <div class="d-flex w-25 w_50_992 position-relative z-10">
+                            <a href="#"><img src="./assets/images/png/mainlogo.png" alt="mainlogo"></a>
+                            <p class="ff_montserrat fs_22 fw_800 color_white ps-2 m-0">FT PLANE</p>
+                        </div>
+                        <span class="menuicon d-none" id="shownav" onclick="shownav()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <div id="showul"
+                            class="d-flex navbar z-3 flex-lg-row flex-column align-items-center  gap-5 w-100 justify-content-lg-end overflow-x-hidden">
+                            <ul class="d-flex flex-lg-row flex-column mb-0 gap-5 ps-0 align-items-center">
+                                <li class="ff_montserrat navli fw_600 fs_16 "><a
+                                        class=" color_white nav_underline position-relative" href="#">All Flight</a>
+                                </li>
+                                <li class="ff_montserrat fw_600 navli fs_16 "><a
+                                        class=" color_white  nav_underline position-relative"
+                                        href="#fighter">Schedule</a></li>
+                                <li class="ff_montserrat fw_600 navli fs_16 "><a
+                                        class=" color_white  nav_underline position-relative"
+                                        href="#roadmap">Passengers</a></li>
+                                <li class="ff_montserrat fw_600 navli fs_16 "><a
+                                        class=" color_white  nav_underline position-relative" href="#team">Your
+                                        Orders</a></li>
+                                <li class="ff_montserrat fw_600 fs_16 lets_hover border_nav_button px-5 py-2"><a
+                                        href="#" class="  color_white">
+                                        Let’s Fly
+                                    </a></li>
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <section class="d-flex flex-grow-1  container text-center overflow-hidden position-relative">
+            <h4
+                class="ff_montserrat color_whitetransparent text_aviation pt-md-0 pt-5 w-100 fw_900 fs_117 text-center lh_150 m-0 ls_06 px-auto z-0">
+                AVIATION</h4>
+            <div class="position-absolute top_7">
+                <img src="./assets/images/png/hero_map.png" alt="hero section map" class="z-n1 w-100">
+            </div>
+            <div class="position-absolute left_4 top_2">
+                <img src="./assets/images/png/plane_image.png" alt="plane image" class="z-3 w-100"
+                    data-aos="zoom-in-down ">
+
+            </div>
+            <div class="position-absolute top_65 w-100">
+                <p class="ff_montserrat fw_700 fs_48 color_white text-center">Travel around the world</p>
+                <p class="ff_inter fw_400 fs_12 color_white">One of the advantages of being disorganized is that one is
+                    always having surprising discoveries</p>
+            </div>
+        </section>
+    </header>
+    <section class="bg_graywhite">
+        <div class="container position-relative top_-100 my-0">
+            <div class="d-flex ">
+                <p class="economy_hover"><a href="#"
+                        class="p_17_36  bor_bottom bor_radius_economy ff_montserrat fw_700 fs_24 color_white bg_notblue">Economy</a>
+                </p>
+                <p class="business_hover position-relative line_left_right"><a href="#"
+                        class="p_17_30 bor_bottom ff_montserrat fw_700 fs_24 color_black bg_color_white">Busniness</a>
+                </p>
+                <p class="first_hover"><a href="#"
+                        class="p_17_67 bor_bottom ff_montserrat bor_radius_20 fw_700 fs_24 color_black bg_color_white">First</a>
+                </p>
+
+            </div>
+            <div class="bg_color_white position-relative top_-2 bor_rad_20">
+                <div class="pt-4 px-5 my-0">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./assets/images/png/location-icon.png" alt="loaction icon">
+                                </div>
+                                <div class="ps-2">
+                                    <h4><a href="#" class="m-0 ff_montserrat fw_600 fs_18 color_black">Location</a></h4>
+                                    <p><a href="#" class="m-0 ff_montserrat fw_400 fs_16 color_lightgray">Where are you
+                                            going?</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./assets/images/png/travelers-icon.png" alt="travellers icon">
+                                </div>
+                                <div class="ps-2">
+                                    <h4><a href="#" class="m-0 ff_montserrat fw_600 fs_18 color_black">Travelers</a>
+                                    </h4>
+                                    <p><a href="#" class="m-0 ff_montserrat fw_400 fs_16 color_lightgray">Add guest</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./assets/images/png/checkin-icon.png" alt="checkin icon">
+                                </div>
+                                <div class="ps-2">
+                                    <h4><a href="#" class="m-0 ff_montserrat fw_600 fs_18 color_black">Check-in</a></h4>
+                                    <p><a href="#" class="m-0 ff_montserrat fw_400 fs_16 color_lightgray">Add date</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./assets/images/png/checkout-icon.png" alt="checkout icon">
+                                </div>
+                                <div class="ps-2">
+                                    <h4><a href="#" class="m-0 ff_montserrat fw_600 fs_18 color_black">Check-out</a>
+                                    </h4>
+                                    <p><a href="#" class="m-0 ff_montserrat fw_400 fs_16 color_lightgray">Add date</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center mt-3 mb-4">
+                            <button
+                                class="ff_montserrat book_now fw_600 fs_16 color_white bg_notblue border-0 book_button">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="ff_montserrat fw_700 fs_40 color_black text-center pt_-50 mt_-50">Our Features</h2>
+            <div class="row pt-5 mt-5 center">
+                <div class="col-3 ">
+                    <div class="our_feature_circle mx-3 my-5 ">
+                        <div class="px-3 pt-3 pb-4 ">
+                            <div class="d-flex justify-content-center">
+                                <img class="mt-3" src="./assets/images/png/best-guide.png" alt="best guide icon">
+                            </div>
+                            <h4 class="pt-3 ff_montserrat fw_800 text-center fs_24 color_black">Best Guide</h4>
+                            <p class="pt-2 ff_montserrat fw_400 fs_20 text-center color_black color_add">Suspendisse
+                                ultrices nibh
+                                non cursus sagittis. Morbi dictum consequat ex, quis finibus
+                                magna.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#"><img class="mt-4" src="./assets/images/png/arrow.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="our_feature_circle mx-3 my-5 position-relative top_30">
+                        <div class="px-3 pt-3 pb-4 text-center ">
+                            <div class="d-flex justify-content-center">
+                                <img class="mt-3" src="./assets/images/png/more-discount.png" alt="more discount icon">
+                            </div>
+                            <h4 class="pt-3 ff_montserrat fw_800 fs_24 color_black">More Discount</h4>
+                            <p class="pt-2 ff_montserrat fw_400 fs_20 color_black color_add">Suspendisse ultrices nibh
+                                non cursus
+                                sagittis. Morbi dictum consequat ex, quis finibus
+                                magna.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#"><img class="mt-4" src="./assets/images/png/arrow.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="our_feature_circle mx-3 my-5">
+                        <div class="px-3 pt-3 pb-4 text-center ">
+                            <div class="d-flex justify-content-center">
+                                <img class="mt-3" src="./assets/images/png/private.png" alt="Private icon">
+                            </div>
+                            <h4 class="pt-3 ff_montserrat fw_800 fs_24 color_black">Private</h4>
+                            <p class="pt-2 ff_montserrat fw_400 fs_20 color_black color_add">Suspendisse ultrices nibh
+                                non cursus
+                                sagittis. Morbi dictum consequat ex, quis finibus
+                                magna.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#"><img class="mt-4" src="./assets/images/png/arrow.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="our_feature_circle mx-3 my-5 position-relative top_30 ">
+                        <div class="px-3 pt-3 pb-4 text-center ">
+                            <div class="d-flex justify-content-center">
+                                <img class="mt-3" src="./assets/images/png/online-support.png"
+                                    alt="Online Support icon">
+                            </div>
+                            <h4 class="pt-3 ff_montserrat fw_800 fs_24 color_black">Online Support</h4>
+                            <p class="pt-2 ff_montserrat fw_400 fs_20 color_black color_add">Suspendisse ultrices nibh
+                                non cursus
+                                sagittis. Morbi dictum consequat ex, quis finibus
+                                magna.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#"><img class="mt-4" src="./assets/images/png/arrow.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="py-5 mt-5">
+                <div class="row">
+                    <div class="col-xl-6 col-12 ">
+                        <div class="d-flex position-relative justify-content-center align-items-center">
+                            <img src="./assets/images/png/lets-flt-big.png" alt="main image"
+                                class=" mw_304 w-100 w_60_576">
+
+                            <img src="./assets/images/png/lets-fly-top.png" alt="top left corner image"
+                                class="position-absolute top_5 left_48 mw_198 w-100 w_25_576">
+                            <img src="./assets/images/png/lets-fly-bottom.png" alt="top right corner image"
+                                class="position-absolute bottom_-4 right_34 mw_181 w-100 w_25_576">
+                            <img src="./assets/images/png/lets-fly-ticket.png" alt="ticket img"
+                                class="position-absolute top_273 left_64 updownticket">
+                            <img src="./assets/images/png/Clouds.png " alt=" clouds image"
+                                class="position-absolute top_10 right_138 updown_cloud">
+                            <img src="./assets/images/png/5.0.png" alt="5.0 image"
+                                class="position-absolute right_85 top_115 updownstar">
+                            <img src="./assets/images/png/newyork.png" alt="new york"
+                                class="position-absolute bottom_0 left_84 updownnewyork">
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <h6 class="ff_montserrat fw_900 fs_20 m-0 color_notblue">Let’s Fly</h6>
+                        <h4 class="pt-3 ff_montserrat fw_700 fs_32 m-0 color_blueblack">It’s one of the leading online
+                            flight booking platforms in the world</h4>
+                        <ul class="pt-4 lets-fly before_border_line">
+                            <li class="pb-3 ff_montserrat fw_400 fs_16 color_blueblack list_style_circle">Contrary to
+                                popular belief, Lorem Ipsum is not simply random text</li>
+                            <li class="pb-3 ff_montserrat fw_400 fs_16 color_blueblack list_style_circle">If you are
+                                going to use a passage of Lorem Ipsum</li>
+                            <li class="pb-3 ff_montserrat fw_400 fs_16 color_blueblack list_style_circle">Lorem Ipsum is
+                                therefore always free from repetition, injected humour, or non-characteristic words etc.
+                            </li>
+                            <li class="  ff_montserrat fw_400 fs_16 color_blueblack list_style_circle">It is a long
+                                established fact that a reader will be distracted by the readable content of a page when
+                                looking at its
+                                layout.</li>
+                        </ul>
+                        <div
+                            class="ff_montserrat mt-4 ms-3  mb-5 list_none mw_200 bg_notblue fw_600 fs_16 border-0 book_button">
+                            <a href="#" class="color_white bg_notblue">Book Now</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg_blueblack ">
+        <div class="container">
+            <div class="row justify-content-between py-5">
+                <div class="col-lg-5 col-12">
+                    <h2 class="color_white ff_montserrat fw_700 fs_40 lh_150 m-0">Book Popular Flight Tickets</h2>
+                    <p class="color_white_add ff_montserrat fw_400 fs_16 pt-3 m-0">Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <img src="./assets/images/png/Air-Delivery.png" alt="air delivery earth image" class="pt-4 pb-5">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="bg_color_white br_30 mw_390 mb-5 p_30">
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <button class="ff_montserrat fw_500 fs_16 color_notblue es_button border-0">
+                                    Economy Saver
+                                </button>
+                                <div class="d-flex align-items-center">
+                                    <p class="ff_montserrat fw_600 fs_16 color_black m-0 pe-2">UK</p>
+                                    <img src="./assets/images/png/flight.png" alt="flight image">
+                                    <p class="ff_montserrat fw_600 fs_16 color_black m-0 ps-2">BD</p>
+                                </div>
+                            </div>
+                            <div class="py-4">
+                                <p class="ff_montserrat fw_700 fs_16 color_black m-0">6 Flight Tickets</p>
+                            </div>
+                            <div class="row pt-3 pb-4 border_bottom">
+                                <div class="col-6">
+                                    <p class="ff_montserrat fw-500 fs_14 color_gray400 m-0">Passenger</p>
+                                    <p class="ff_montserrat fw_600 fs_16 color_black pt-2 m-0">Raju Mullah</p>
+                                    <p class="ff_montserrat fw-500 fs_14 color_gray400 m-0 pt-3">Flight</p>
+                                    <p class="ff_montserrat fw_600 fs_16 color_black pt-2 m-0">#5486626661</p>
+                                    <p class="ff_montserrat fw-500 fs_14 color_gray400 m-0 pt-3">Class</p>
+                                    <p class="ff_montserrat fw_600 fs_16 color_black pt-2 m-0">Economy</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="ff_montserrat fw-500 fs_14 color_gray400 m-0">Date</p>
+                                    <p class="ff_montserrat fw_600 fs_16 color_black pt-2 m-0">20 Nov 2022</p>
+                                    <p class="ff_montserrat fw-500 fs_14 color_gray400 pt-3 m-0">Gate</p>
+                                    <p class="ff_montserrat fw_600 fs_16 color_black pt-2 m-0">20 A</p>
+                                    <p class="ff_montserrat fw-500 fs_14 color_gray400 pt-3 m-0">Seats</p>
+                                    <p class="ff_montserrat fw_600 fs_16 color_black pt-2 m-0">5B - 11B</p>
+                                </div>
+                            </div>
+                            <div class="pt-4 pb-3 ps-3 pe-3 position-relative mb-5">
+                                <img src="./assets/images/png/barcode.png" alt="barcode image" class="w-100">
+                                <div class="position-absolute top_-10 left_-14 rotate_90"><div class="color_circle z-2"></div></div>
+                                <div class="position-absolute right_-14 top_9 rotate_-90"><div class="color_circle z-2"></div></div>
+                                <img src="./assets/images/png/backgroung_layers.png" alt="background layer"
+                                    class="position-absolute right_-24 bottom_-100">
+                                <img src="./assets/images/png/left_portion.png" alt="left slide protion"
+                                    class="position-absolute bottom_-96 left_130">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg_graywhite ">
+        <div class="container">
+            <div class="pt-5">
+                <h2 class="pt-5 ff_montserrat fw_700 fs_40 color_likeblack text-center m-0">Best travelars of this month
+                </h2>
+                <div class="row center pt-4 pb-5">
+                    <div class="col-3 pt-4 pb-5">
+                        <div class="bg_color_white mx-3 mw_282 br_213">
+                            <img src="./assets/images/png/img-1.png" alt="image 1" class="w-100">
+                            <img src="./assets/images/png/pic-1.png" alt="pic 1"
+                                class="position-relative left_100 mw_80 w-100 dis_none_877 bottom_25">
+                            <p class="text-center pt_4 ff_montserrat fw_600 fs_24 color_likeblack m-0">Raju Mullah</p>
+                            <p class="text-center pb-4 ff_montserrat fw_500 fs_16  m-0"><a href="#"
+                                    class="color_gray400">@rajumullah</a></p>
+                        </div>
+                    </div>
+                    <div class="col-3 pt-4 pb-5">
+                        <div class="bg_color_white mx-3 mw_282 br_213">
+                            <img src="./assets/images/png/img-2.png" alt="image 2" class="w-100">
+                            <img src="./assets/images/png/pic-2.png" alt="pic 2"
+                                class="position-relative left_100 mw_80 w-100 dis_none_877 bottom_25">
+                            <p class="text-center pt_4 ff_montserrat fw_600 fs_24 color_likeblack m-0">Zaire Vetrovs</p>
+                            <p class="text-center pb-4 ff_montserrat fw_500 fs_16  m-0"><a href="#"
+                                    class="color_gray400">@zairevetrovs</a></p>
+                        </div>
+                    </div>
+                    <div class="col-3 pt-4 pb-5">
+                        <div class="bg_color_white mx-3 mw_282 br_213">
+                            <img src="./assets/images/png/img-3.png" alt="image 3" class="w-100">
+                            <img src="./assets/images/png/pic-3.png" alt="pic 3"
+                                class="position-relative left_100 mw_80 w-100 dis_none_877 bottom_25">
+                            <p class="text-center pt_4 ff_montserrat fw_600 fs_24 color_likeblack m-0">Marcus Dias</p>
+                            <p class="text-center pb-4 ff_montserrat fw_500 fs_16  m-0"><a href="#"
+                                    class="color_gray400">@marcusdias</a></p>
+                        </div>
+                    </div>
+                    <div class="col-3 pt-4 pb-5">
+                        <div class="bg_color_white mx-3 mw_282 br_213">
+                            <img src="./assets/images/png/img-4.png" alt="image 4" class="w-100">
+                            <img src="./assets/images/png/pic-4.png" alt="pic 4"
+                                class="position-relative left_100 mw_80 w-100 dis_none_877 bottom_25">
+                            <p class="text-center pt_4 ff_montserrat fw_600 fs_24 color_likeblack m-0">Davis Schleifer
+                            </p>
+                            <p class="text-center pb-4 ff_montserrat fw_500 fs_16 m-0"><a href="#"
+                                    class="color_gray400">@davisschleifer</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="ff_montserrat fw_600 fs_20 color_notblue text-center m-0">What’s our customer saying</p>
+            <h2 class="pt-2 ff_montserrat fw_700 fs_40 color_likeblack text-center m-0">Our Customer Feedback</h2>
+            <div class="row py-5">
+                <div class="col-md-7 col-12">
+                    <div class="position-relative">
+                        <img src="./assets/images/png/map-man-images.png" alt="map man images" class="w-100 ">
+                        <img src="./assets/images/png/map-pic-1.png" alt="map man pic 1"
+                            class="position-absolute left_14 bottom_64">
+                        <img src="./assets/images/png/map-pic-2.png" alt="map man pic 2"
+                            class="bottom_61 left_43 position-absolute">
+                        <img src="./assets/images/png/map-pic-3.png" alt="map man pic 3"
+                            class="position-absolute bottom_62 right_9">
+                        <img src="./assets/images/png/map-pic-4.png" alt="map man pic 4"
+                            class="position-absolute bottom_23 left_18">
+                        <img src="./assets/images/png/map-pic-5.png" alt="map man pic 5"
+                            class="position-absolute left_49 bottom_18">
+                        <img src="./assets/images/png/map--pic-6.png" alt="map man pic 6"
+                            class="position-absolute right_18 bottom_36">
+                        <img src="./assets/images/png/map-pic-7.png" alt="map man pic 7"
+                            class="position-absolute bottom_1 right_8">
+                    </div>
+                </div>
+                <div class="col-md-5 col-12">
+                    <div class=" bg_color_white jaylon_white_box">
+                        <div class="jaylon">
+                            <div>
+                                <div class="d-flex align-content-center ">
+                                    <img src="./assets/images/png/jaylon.png" alt="jaylon image">
+                                    <div class="ps-4">
+                                        <p class="m-0 ff_montserrat fw_600 fs_20 color_likeblack">Jaylon Vaccaro</p>
+                                        <img src="./assets/images/png/stars.png " alt=" stars image" class="m-0">
+                                    </div>
+
+                                </div>
+                                <div class="pt-4">
+                                    <p class="ff_montserrat fw_400 fs_18 color_pureblack fs_i m-0 ">There are many
+                                        variations of
+                                        passages of Lorem Ipsum available, but the majority have suffered alteration in
+                                        some
+                                        form,
+                                        by injected humour, or randomised words which don</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex align-content-center ">
+                                    <img src="./assets/images/png/jaylon.png" alt="jaylon image">
+                                    <div class="ps-4">
+                                        <p class="m-0 ff_montserrat fw_600 fs_20 color_likeblack">Jaylon Vaccaro</p>
+                                        <img src="./assets/images/png/stars.png " alt=" stars image" class="m-0">
+                                    </div>
+
+                                </div>
+                                <div class="pt-4">
+                                    <p class="ff_montserrat fw_400 fs_18 color_pureblack fs_i m-0 ">There are many
+                                        variations of
+                                        passages of Lorem Ipsum available, but the majority have suffered alteration in
+                                        some
+                                        form,
+                                        by injected humour, or randomised words which don</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <button class="left_arrow_bg h_50 w_50 border-0 br_50 me-2">
+                            <img src="./assets/images/png/left-gray-arrow.png" alt="left arrow">
+                        </button>
+                        <button class="right_arrow_bg h_50 w_50 border-0 br_50 ms-2">
+                            <img src="./assets/images/png/right-blue-arrow.png" alt="right arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="py-5">
+                <h2 class="ff_montserrat fw_700 fs_40 color_likeblack text-center m-0">Make memories with us</h2>
+                <div class="row center py-5">
+                    <div class="col-3">
+                        <img src="./assets/images/png/make-memory-1.png" alt="make memory image 1" class="w-100 my-5">
+                    </div>
+                    <div class="col-3">
+                        <img src="./assets/images/png/make-memory-2.png" alt="make memory image 2"
+                            class="w-100 position-relative top_50 my-5">
+                    </div>
+                    <div class="col-3">
+                        <img src="./assets/images/png/make-memory-3.png" alt="make memory image 3" class="w-100 my-5">
+                    </div>
+                    <div class="col-3">
+                        <img src="./assets/images/png/make-memory-4.png" alt="make memory image 4"
+                            class="w-100 position-relative top_50 my-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg_newsletter py-5 ">
+        <div class="container">
+            <div class="py-5 mw_534 mx-auto text-center">
+                <h2 class="ff_montserrat fw_700 fs_40 color_likeblack m-0 pb-4">Subscribe Newsletter & get letest news
+                </h2>
+                <div class="newsletter_white_bg">
+                    <div class="d-flex justify-content-between px-2 py-2 align-items-center">
+                        <input type="email" placeholder="Enter your email address"
+                            class="ff_rubik fw_500 fs_20 color_bggraywhite opacity_2 ps-2 m-0 outline_none border-0 mw_365">
+
+                        <button
+                            class="ff_montserrat fw-600 fs_16 color_white subscribe border-0 bg_notblue br_56 p_10_25">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="bg_hero position-relative z-1 ">
+        <div class="container">
+            <div class="py-4">
+                <img src="./assets/images/png/footer-map.png" alt="footer map" class="position-absolute z-n1">
+            </div>
+
+            <div class="row justify-content-between flex-column flex-lg-row pt-5 pb-4">
+                <div class="col-lg-3 col-12">
+                    <div class="d-flex align-items-center">
+                        <a href="#"><img src="./assets/images/png/mainlogo.png" alt="main logo" class="main_logo"></a>
+                        <p class="ff_montserrat fw_800 fs_22 color_white ps-2 m-0">FT PLANE</p>
+                    </div>
+                    <p class="py-3 ff_montserrat fw_400 fs_16 color_footertext mw_300">There are many variations of
+                        passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+                    </p>
+                    <div class="d-flex m-0 align-items-start">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="#" class="social_icon  w_42 h_42 p_7_16 ani_icon"><img
+                                    src="./assets/images/png/facebook-icon.png" alt="facebook icon"></a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center ms-3 me-3">
+                            <a href="#" class="social_icon p_6_12 w_42 h_42 ani_icon"><img
+                                    src="./assets/images/png/linkdin-icon.png" alt="linkdin icon"></a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="#" class="social_icon p_8_11 w_42 h_42 ani_icon"><img
+                                    src="./assets/images/png/twitter-icon.png" alt="twitter icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                    <div class="row justify-content-between">
+                        <div class="col-sm-3 col-6">
+                            <ul class="ps-0 pt-4">
+                                <li class="ff_montserrat fw_700 fs_24 color_white m-0">Address</li>
+                                <li class="pt-2 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Integrations</a></li>
+                                <li class="pt-3 ff_montserrat footerli  fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Hello</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Intercom</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Customer</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <ul class="ps-0 pt-4">
+                                <li class="ff_montserrat fw_700 fs_24 color_white m-0">About</li>
+                                <li class="pt-2 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Our
+                                        Blog</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Customers</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Our
+                                        Team</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Careers</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Integrations</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <ul class="ps-0 pt-4">
+                                <li class="ff_montserrat fw_700 fs_24 color_white m-0">Support</li>
+                                <li class="pt-2 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Test Zoom</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Account</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Support Center</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Live Training</a></li>
+                                <li class="pt-3 ff_montserrat footerli fw_400 fs_16 m-0"><a href="#"
+                                        class="color_footertext f_underline position-relative">Accessibility</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_hr"></div>
+            <div class="pt-4 pb-4">
+                <p class="ff_montserrat fw_400 fs_14 color_white text-center">Copyright@FT PLANE 2022 All right reserved
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        $('.center').slick({
+            centerMode: false,
+            centerPadding: '100',
+            slidesToShow: 4,
+            autoplay: true,
+            autoplaySpeed: 800,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 968,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 450,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <script>
+
+        $('.jaylon').slick({
+            fade: false,
+            arrows: false,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 968,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 450,
+                    settings: {
+                        arrows: false,
+
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 320,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
+    <!-- js  -->
+    <script>
+        function shownav() {
+            document.getElementById("showul").classList.toggle("nav_left0")
+        }
+    </script>
+    <!-- aos js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+
+        const topbtn = document.getElementById('topbtn');
+
+
+        window.onscroll = function () { topscroll() };
+
+        function topscroll() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topbtn.style.display = "block";
+            }
+            else {
+                topbtn.style.display = "none";
+            }
+        }
+
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+    </script>
+</body>
+
+</html>
